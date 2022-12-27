@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.alibaba">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AliBaba"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin.AdminCheckNewProducts"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminHome"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.SellerHome"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.SellerLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.SellerRegersterForm"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.resetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminMaintainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminUserProducts"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminNewOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.ConfirmFinalOrder"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.ProductDetailsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.Settings_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.sellerProductCategory"
+            android:exported="false" />
+        <activity
+            android:name=".Seller.Selleraddnewproducts_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.Home_real"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Buyer.Register_avtivity"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.login1_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Buyer.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
